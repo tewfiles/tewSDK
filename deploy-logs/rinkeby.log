@@ -1,0 +1,64 @@
+oz add IXOToken
+✓ Compiled contracts with solc 0.5.17 (commit.d19bba13)
+✓ Added contract IXOToken
+oz add ERC20Migrator
+Nothing to compile, all contracts are up to date.
+✓ Added contract ERC20Migrator
+oz push             
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+- Contract LegacyToken has an explicit constructor. Change it to an initializer fun
+ction. See https://docs.openzeppelin.com/sdk/2.5/writing-contracts#initializers.
+One or more contracts have validation errors. Please review the items listed above and fix them, or run this command again with the --force option.
+oz push --force
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+- Contract LegacyToken has an explicit constructor. Change it to an initializer fun
+ction. See https://docs.openzeppelin.com/sdk/2.5/writing-contracts#initializers.
+✓ Contract IXOToken deployed
+✓ Contract ERC20Migrator deployed
+✓ Contract LegacyToken deployed
+All contracts have been deployed
+oz create ERC20Migrator
+Nothing to compile, all contracts are up to date.
+? Pick a network (Use arrow keys)
+  test 
+  local 
+❯ rinkeby 
+oz create LegacyToken  
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+All contracts are up to date
+? Call a function to initialize the instance after creating it? No
+✓ Setting everything up to create contract instances
+✓ Instance created at 0x5d6c3892905785E4636E379E72C135f7EF1D9a3B
+0x5d6c3892905785E4636E379E72C135f7EF1D9a3B
+oz create ERC20Migrator
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+All contracts are up to date
+? Call a function to initialize the instance after creating it? Yes
+? Select which function * initialize(sender: address)
+? sender (address): 0x908f612C33C6499db69CAF641c94bA3d062dF8bD
+✓ Instance created at 0x84Ecc2Db8a536273B5DbF028d055EC1345AFd0B4
+0x84Ecc2Db8a536273B5DbF028d055EC1345AFd0B4
+oz create ERC20Migrator
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+All contracts are up to date
+? Call a function to initialize the instance after creating it? Yes
+? Select which function initialize(legacyToken: address, sender: address)
+? legacyToken (address): 0x5d6c3892905785E4636E379E72C135f7EF1D9a3B
+? sender (address): 0x908f612C33C6499db69CAF641c94bA3d062dF8bD
+✓ Instance created at 0x2fe87019Fd684fdE91c9A6ca68cc9f05495eFf9d
+0x2fe87019Fd684fdE91c9A6ca68cc9f05495eFf9d
+oz create IXOToken     
+Nothing to compile, all contracts are up to date.
+? Pick a network rinkeby
+All contracts are up to date
+? Call a function to initialize the instance after creating it? Yes
+? Select which function initialize(_legacyToken: address, _migrator: address)
+? _legacyToken (address): 0x5d6c3892905785E4636E379E72C135f7EF1D9a3B
+? _migrator (address): 0x2fe87019Fd684fdE91c9A6ca68cc9f05495eFf9d
+✓ Instance created at 0x3D95f526C24db16CE96380823c46449a520aD3bA
+0x3D95f526C24db16CE96380823c46449a520aD3bA

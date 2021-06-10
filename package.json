@@ -1,0 +1,24 @@
+{
+  "name": "erc20-opt-in-onboarding",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Facu Spagnuolo <facundo@zeppelin.solutions>, refactored by Benjamin Scholtz @BenSchZA",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx truffle compile",
+    "test": "NODE_ENV=test npx truffle test",
+    "migrate": "npx truffle migrate --network rinkeby --skip-dry-run"
+  },
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts-ethereum-package": "^2.5.0",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "@truffle/hdwallet-provider": "^1.0.35",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.25"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@openzeppelin/test-helpers": "^0.5.5"
+  }
+}

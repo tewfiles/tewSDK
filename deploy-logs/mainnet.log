@@ -1,0 +1,37 @@
+➜  erc20-onboarding git:(refactor-migrator) ✗ oz balance
+? Enter an address to query its balance 0xd651A06279804bCc0cEdff042405090DCFDAE01c
+
+
+? Pick a network mainnet
+Balance: 0.41529196 ETH
+415291960000000000
+➜  erc20-onboarding git:(refactor-migrator) ✗ oz create ERC20Migrator
+Nothing to compile, all contracts are up to date.
+? Pick a network mainnet
+All contracts are up to date
+? Call a function to initialize the instance after creating it? Yes
+? Select which function initialize(legacyToken: address, sender: address)
+? legacyToken (address): 0x519D822F0832b8e8C8DfC594E718f8dfdAE74B47
+? sender (address): 0xd651A06279804bCc0cEdff042405090DCFDAE01c
+✓ Instance created at 0xAe174141db66358D9f225293Cd01Ea3119F848A5
+0xAe174141db66358D9f225293Cd01Ea3119F848A5
+➜  erc20-onboarding git:(refactor-migrator) ✗ oz create IXOToken
+Nothing to compile, all contracts are up to date.
+? Pick a network mainnet
+All contracts are up to date
+? Call a function to initialize the instance after creating it? Yes
+? Select which function initialize(_legacyToken: address, _cap: uint256, _migrator
+: address)
+? _legacyToken (address): 0x519D822F0832b8e8C8DfC594E718f8dfdAE74B47
+? _cap (uint256): 1000000000000000000
+? _migrator (address): 0xAe174141db66358D9f225293Cd01Ea3119F848A5
+✓ Instance created at 0x5cEc590fd6E795c40B3203033e8d6C9528a62A82
+0x5cEc590fd6E795c40B3203033e8d6C9528a62A82
+➜  erc20-onboarding git:(refactor-migrator) ✗ oz send-tx
+? Pick a network mainnet
+? Pick an instance ERC20Migrator at 0xAe174141db66358D9f225293Cd01Ea3119F848A5
+? Select which function beginMigration(newToken_: address)
+? newToken_ (address): 0x5cEc590fd6E795c40B3203033e8d6C9528a62A82
+✓ Transaction successful. Transaction hash: 0x8f38f4f763c7e9ccd3275d6557a242fcc48a
+2eb4d209caea62d4cbe31373be22
+➜  erc20-onboarding git:(refactor-migrator) ✗    
